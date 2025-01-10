@@ -1,0 +1,15 @@
+.button-panel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    padding: 1px;
+    background-color: #555555;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+.button-row {
+    display: contents;  
+}

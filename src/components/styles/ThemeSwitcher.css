@@ -1,0 +1,78 @@
+/* Light Mode Styles */
+.App.light-mode {
+  color: black;
+}
+
+.App.light-mode .display {
+  background-color: #fff;
+  color: black;
+}
+
+.App.light-mode .button-panel button {
+  background-color: #f0f0f0;
+  color: black;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition for scale and shadow */
+}
+
+.App.light-mode .button-panel button:active {
+  transform: scale(0.95); /* Slightly scale down the button on press */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to give pressed effect */
+}
+
+/* Dark Mode Styles */
+.App.dark-mode {
+  color: white;
+}
+
+.App.dark-mode .display {
+  background-color: #333;
+  color: white;
+}
+
+.App.dark-mode .button-panel button {
+  background-color: #444;
+  color: white;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition for scale and shadow */
+}
+
+.App.dark-mode .button-panel button:active {
+  transform: scale(0.95); /* Slightly scale down the button on press */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to give pressed effect */
+}
+
+.App .button-panel button:hover {
+  opacity: 0.8;
+}
+
+.theme-switcher {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition for scale and shadow */
+}
+
+.theme-switcher:active {
+  transform: scale(0.95); /* Scale down when pressed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for pressed effect */
+}
+
+.theme-switcher:hover {
+  opacity: 0.8;
+}
+
+#theme-switcher-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.theme-switcher {
+  width: 100%;
+  padding: 10px;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

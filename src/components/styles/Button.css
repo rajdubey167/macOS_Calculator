@@ -1,0 +1,55 @@
+.button {
+    background: #444;
+    color: #cfcfcd;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease; 
+}
+
+.button:active {
+    background: #333;
+    transform: scale(0.95); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.button.number {
+    background: #555;
+}
+
+.button-0 {
+    grid-column: span 2;
+}
+
+#ops {
+    background-color: orange;
+    color: white;
+    transition: background-color 0.3s ease; 
+}
+
+#num {
+    background: #71726c;
+    color: #cfcfcd;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.1s ease; /* Transition for background, scale, and shadow */
+}
+
+#ops:active {
+    background-color: #ff8c00;
+}
+
+#num:active {
+    background-color: #5c5c4b; 
+}

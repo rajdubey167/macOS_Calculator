@@ -1,0 +1,27 @@
+.App {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --button-background-color: #ddd;
+  --button-text-color: #000;
+}
+
+.dark-mode {
+  --background-color: #333;
+  --text-color: #fff;
+  --button-background-color: #555;
+  --button-text-color: #fff;
+}
